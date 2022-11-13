@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <main>
+        <section class="container content-section">
+            <h2 class="section-header">SHOPPING CART</h2>
+            <!--Cart Header-->
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <!--Cart Items-->
+            <div class="cart-items">
+                <!--Cart Item-->
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Shirt.png" width="100" height="100">
+                        <span class="cart-item-title">T-Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                        <span class="btn-heart" name="heart"></span>
+                    </div>
+                </div>
+                <!--Cart Item-->
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Coffee.png" width="100" height="100">
+                        <span class="cart-item-title">Coffee Cup</span>
+                    </div>
+                    <span class="cart-price cart-column">$6.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                        <span class="btn-heart" name="heart"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Cart Total-->
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+        </section>
+    </main>
+    <script src="store.js"></script>
+</body>
+
+</html>
